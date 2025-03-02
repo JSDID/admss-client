@@ -73,3 +73,7 @@ react – библиотека React
 react-dom – рендеринг React-компонентов
 
 react-scripts – инструменты 
+
+Видео обзор 
+
+https://icecreamapps.com/v/fqrfgt2
