@@ -1,10 +1,10 @@
 Automation for car dealers
 
-Video review
+Video review of the project
 
 https://icecreamapps.com/v/fqrfgt2
 
-The project contains
+Tech stack
 
 Testing:
 
