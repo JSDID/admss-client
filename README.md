@@ -1,5 +1,3 @@
-Automation for car dealers
-
 Video review of the project
 
 https://icecreamapps.com/v/fqrfgt2
