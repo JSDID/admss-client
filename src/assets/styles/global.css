@@ -41,6 +41,15 @@
     --admss-app-status-blue: #0085FF;
     --admss-app-blue-violet: #2a359b;
     --admss-app-deep-purple: #852a9b;
+    --admss-app-statuses-default: #5ED69D;
+    --admss-app-statuses-started: #0085FF;
+    --admss-app-statuses-in-progress: #0040BD;
+    --admss-app-statuses-paused: #FFC700;
+    --admss-app-statuses-postponed: #E97E00;
+    --admss-app-statuses-completed: #148D00;
+    --admss-app-statuses-cancelled: #DE0000;
+    --admss-app-statuses-outdated: #5F5F5F;
+    --admss-app-statuses-deleted: #000000;
     --admss-app-aside-small-width: 130px;
     --admss-app-dialog-border-radius: 15px;
 }

@@ -804,7 +804,7 @@ export default function Inventories({
                                         first={lazyState.first}
                                         rows={lazyState.rows}
                                         rowsPerPageOptions={ROWS_PER_PAGE}
-                                        totalRecords={totalRecords}
+                                        totalRecords={totalRecords || 1}
                                         onPage={pageChanged}
                                         onSort={sortData}
                                         sortOrder={lazyState.sortOrder}

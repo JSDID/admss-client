@@ -67,6 +67,20 @@ export const renderTaskStatus = (task_status: TaskStatus) => {
                     className='tasks-widget__chip task-status--cancelled'
                 />
             );
+        case TaskStatus.OUTDATED:
+            return (
+                <Chip
+                    label={TaskStatus.OUTDATED}
+                    className='tasks-widget__chip task-status--outdated'
+                />
+            );
+        case TaskStatus.DELETED:
+            return (
+                <Chip
+                    label={TaskStatus.DELETED}
+                    className='tasks-widget__chip task-status--deleted'
+                />
+            );
         default:
             return (
                 <Chip

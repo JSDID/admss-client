@@ -47,31 +47,46 @@
 }
 
 .task-status--started {
-  border-color: var(--admss-app-status-blue);
-  color: var(--admss-app-status-blue);
+  border-color: var(--admss-app-statuses-started);
+  color: var(--admss-app-statuses-started);
 }
 
 .task-status--in-progress {
-  border-color: var(--admss-app-warning-blue);
-  color: var(--admss-app-warning-blue);
+  border-color: var(--admss-app-statuses-in-progress);
+  color: var(--admss-app-statuses-in-progress);
 }
 
 .task-status--paused {
-  border-color: var(--admss-app-status-yellow);
-  color: var(--admss-app-status-yellow);
+  border-color: var(--admss-app-statuses-paused);
+  color: var(--admss-app-statuses-paused);
 }
 
 .task-status--postponed {
-  border-color: var(--admss-app-warning-yellow);
-  color: var(--admss-app-warning-yellow);
+  border-color: var(--admss-app-statuses-postponed);
+  color: var(--admss-app-statuses-postponed);
 }
 
 .task-status--completed {
-  border-color: var(--admss-app-warning-green);
-  color: var(--admss-app-warning-green);
+  border-color: var(--admss-app-statuses-completed);
+  color: var(--admss-app-statuses-completed);
 }
 
 .task-status--cancelled {
-  border-color: var(--admss-app-red);
-  color: var(--admss-app-red);
+  border-color: var(--admss-app-statuses-cancelled);
+  color: var(--admss-app-statuses-cancelled);
+}
+
+.task-status--outdated {
+  border-color: var(--admss-app-statuses-outdated);
+  color: var(--admss-app-statuses-outdated);
+}
+
+.task-status--deleted {
+  border-color: var(--admss-app-statuses-deleted);
+  color: var(--admss-app-statuses-deleted);
+}
+
+.task-status--default {
+  border-color: var(--admss-app-statuses-default);
+  color: var(--admss-app-statuses-default);
 }

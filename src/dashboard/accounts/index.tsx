@@ -290,7 +290,7 @@ export const AccountsDataTable = observer(
                                 first={lazyState.first}
                                 rows={lazyState.rows}
                                 rowsPerPageOptions={ROWS_PER_PAGE}
-                                totalRecords={totalRecords}
+                                totalRecords={totalRecords || 1}
                                 onPage={pageChanged}
                                 onSort={sortData}
                                 reorderableColumns
