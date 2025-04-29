@@ -1,0 +1,14 @@
+.search-dialog {
+    width: 480px;
+    .p-dialog-footer {
+        margin-bottom: 30px;
+    }
+    .p-dropdown-label {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+.search-dialog__clear {
+    font-size: 14px;
+    line-height: 1.5;
+}

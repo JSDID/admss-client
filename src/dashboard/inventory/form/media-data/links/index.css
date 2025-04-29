@@ -1,0 +1,110 @@
+.media-links {
+    .media-links__textarea {
+        height: 110px;
+        resize: none;
+    }
+
+    .p-tooltip-target-wrapper {
+        width: 23%;
+        .p-button {
+            width: 100%;
+        }
+    }
+
+    .p-datatable {
+        .p-datatable-thead {
+            .p-column-header-content,
+            tr > th {
+                padding: 0;
+            }
+            height: 60px;
+            .p-column-title {
+                padding: 0;
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        .p-datatable-tbody tr,
+        .p-datatable-tbody tr td {
+            height: 50px;
+            padding: 0;
+            width: 92px;
+            .p-button {
+                height: 30px;
+                padding: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                &:enabled:hover,
+                &:enabled:focus {
+                    background: transparent;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .link-control {
+            width: 70px;
+            margin-left: 10px;
+        }
+
+        .media-links__expand-row {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .media-links__number {
+                display: inline-flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                color: var(--admss-app-primary-main-green);
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+
+        .media-links__action-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100px;
+            margin-left: auto;
+            margin-right: 20px;
+            .p-button {
+                width: 20px;
+            }
+        }
+        .expanded-row {
+            padding-left: 190px;
+            gap: 0;
+
+            .expanded-row__label {
+                text-align-last: left;
+                flex-basis: 90px;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            .expanded-row__text {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .inventory-links__delete-button {
+        color: var(--admss-app-light-grey);
+        &:enabled:hover,
+        &:enabled:focus {
+            color: var(--admss-app-dark-blue);
+        }
+    }
+
+    .inventory-links__expand-button {
+        color: var(--admss-app-blue);
+        &.inventory-links__expand-button--rotate {
+            transform: rotate(180deg);
+        }
+    }
+}

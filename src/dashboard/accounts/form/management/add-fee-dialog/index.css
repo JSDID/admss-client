@@ -1,0 +1,65 @@
+.dialog__add-fee {
+    width: 660px;
+    min-height: 40vh;
+
+    .input--grey {
+        color: var(--admss-app-light-grey);
+    }
+
+    .p-inputtext:not(.input--grey),
+    .p-inputnumber:not(.input--grey),
+    .p-textarea:not(.input--grey) {
+        color: var(--admss-app-black);
+    }
+}
+
+.dialog__add-fee .p-button {
+    height: 60px;
+}
+
+.dialog__add-fee .p-dialog-content {
+    padding-top: 20px;
+}
+
+.add-fee__control,
+.add-fee__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.add-fee__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4rem;
+    font-size: 18px;
+
+    .add-fee__label {
+        font-weight: 500;
+    }
+}
+
+.add-fee__control .currency-item__input {
+    width: 100%;
+}
+
+.add-fee__input {
+    display: inline-flex;
+    flex: 1 1 100%;
+}
+
+.add-fee__area {
+    height: 130px;
+    resize: none;
+}
+
+.add-fee__remember {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.add-fee__remember--bold {
+    color: var(--admss-app-main-blue);
+    font-weight: 700;
+}

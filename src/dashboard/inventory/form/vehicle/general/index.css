@@ -1,0 +1,58 @@
+.vehicle-general__dropdown,
+.vehicle-general__text-input {
+    height: 50px;
+}
+
+.vehicle-general__number-input .p-inputnumber-input {
+    width: 100%;
+}
+
+.vehicle-general__dropdown-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.vehicle-general__line {
+    border: none;
+    border-top: 1px solid var(--admss-app-light-grey);
+    margin-top: 12px;
+}
+
+.vehicle-general__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.p-inputnumber .p-inputtext.p-inputnumber-input {
+    width: 100%;
+}
+
+.vehicle-general-overwrite {
+    display: flex;
+    align-items: center;
+}
+
+.vehicle-general-overwrite__label {
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.vehicle-general-overwrite__icon.p-button.p-button-icon-only {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-left: 2px;
+    border-radius: 50%;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.vehicle-general-overwrite__icon .p-button-icon {
+    padding-top: 4px;
+    font-size: 14px;
+    color: var(--admss-app-main-blue);
+}

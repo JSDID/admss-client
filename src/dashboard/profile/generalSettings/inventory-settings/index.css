@@ -1,0 +1,53 @@
+.settings-inventory {
+    padding-top: 0;
+    padding-left: 0;
+    .settings-form__title {
+        height: 48px;
+    }
+    .settings-inventory__tabs .p-tabview-nav-container {
+        height: 35px;
+        padding-bottom: 40px;
+    }
+    .settings-inventory__tabs .p-tabview-nav {
+        display: flex;
+        height: auto;
+        min-height: auto;
+        flex-direction: row;
+    }
+
+    .p-tabview-nav {
+        flex-direction: row;
+        flex: 0 0;
+        width: auto;
+        border: none;
+        min-height: auto;
+        border-bottom: 2px solid var(--admss-app-light-grey);
+        text-transform: uppercase;
+        font-weight: 700;
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-right: 14px;
+    }
+
+    .p-tabview-panels {
+        flex: 1;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 10px;
+        border: none;
+        height: 43.5vh;
+    }
+
+    .p-tabview-nav-container a.p-tabview-nav-link {
+        color: var(--admss-app-primary);
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .p-tabview-nav-container a.p-tabview-nav-link[aria-selected="true"] {
+        color: var(--admss-app-main-blue);
+        border-radius: 0;
+        border-bottom: 2px solid var(--admss-app-main-blue);
+    }
+}

@@ -1,0 +1,32 @@
+.general-info__dropdown {
+    height: 50px;
+}
+
+.general-info__text-input[readonly] {
+    cursor: default;
+    &:hover {
+        border-color: var(--admss-app-light-grey);
+    }
+}
+
+.general-info__button {
+    width: 245px;
+    height: 54px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: 0;
+    left: 4px;
+    color: var(--admss-app-medium-grey);
+    margin-top: -16px;
+    font-size: 12px;
+}
+
+.overwrite-tooltip .p-tooltip-text {
+    box-shadow: 0 0 5px 0 var(--admss-app-dark-blue);
+    background-color: var(--admss-app-white-blue);
+}

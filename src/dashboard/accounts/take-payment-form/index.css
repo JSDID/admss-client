@@ -1,0 +1,202 @@
+.take-payment {
+    --input-regular: 40px;
+    --input-small: 30px;
+
+    .info-section__title {
+        color: var(--admss-app-main-blue);
+    }
+}
+
+.take-payment .p-tabview-nav-content {
+    padding: 10px 20px;
+}
+
+.take-payment__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--admss-app-light-grey);
+    box-shadow: 0 0 3px 0 var(--admss-app-main-blue);
+
+    &.pay-off {
+        row-gap: 11px;
+    }
+}
+
+.take-payment__title {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    color: var(--admss-app-main-blue);
+}
+
+.take-payment__item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.take-payment__item--subtitle {
+    font-size: 18px;
+}
+
+.take-payment__value {
+    padding-left: 2.4rem;
+}
+
+.take-payment__item--bold .take-payment__value,
+.take-payment__item--bold .take-payment__label {
+    font-weight: 700;
+}
+
+.take-payment__item--opacity .take-payment__value,
+.take-payment__item--opacity .take-payment__label {
+    color: var(--admss-app-medium-grey);
+}
+
+.take-payment__value--green,
+.take-payment__label--green {
+    color: var(--admss-app-warning-green);
+    font-weight: 600;
+}
+
+.take-payment__label {
+    padding-right: 1rem;
+    font-weight: 600;
+    font-size: 16px;
+    flex: 0 0 50%;
+}
+
+.take-payment__item .currency-item {
+    flex: 0 0 50%;
+}
+
+.take-payment__item .currency-item__input {
+    height: 32px;
+}
+
+.take-payment__item {
+
+    .currency-item__input:not(.take-payment__input--small) .p-inputnumber-input,
+    .date-item__input .p-inputtext {
+        height: var(--input-regular);
+    }
+
+    .currency-item__input .take-payment__input--small .p-inputnumber-input,
+    .p-input.take-payment__input--small .p-inputtext-input,
+    .take-payment__input--small .p-inputnumber-input {
+        height: var(--input-small);
+    }
+
+    .currency-item__input:has(.take-payment__input--small) .currency-item__icon {
+        height: var(--input-small);
+        width: var(--input-small);
+    }
+
+    .date-item__input {
+        margin-left: auto;
+        width: 66%;
+    }
+
+    .p-dropdown.take-payment__input--small .p-inputtext {
+        height: 100%;
+    }
+
+    .p-dropdown:not(.take-payment__input--small) {
+        height: var(--input-regular);
+        width: 66%;
+    }
+
+    .p-inputtext,
+    .p-inputnumber {
+        height: var(--input-regular);
+        width: 66%;
+        font-size: 14px;
+    }
+
+    .take-payment__input .p-inputtext,
+    .take-payment__input .p-inputnumber,
+    .take-payment__input--small .p-inputtext,
+    .take-payment__input--small .p-inputnumber {
+        color: var(--admss-app-light-grey);
+    }
+
+    .take-payment__input.input-change .p-inputtext,
+    .take-payment__input.input-change .p-inputnumber,
+    .take-payment__input--small.input-change .p-inputtext,
+    .take-payment__input--small.input-change .p-inputnumber {
+        color: var(--admss-app-primary);
+    }
+
+    .currency-item .p-inputnumber {
+        width: 100%;
+    }
+
+    .take-payment__input--small.p-dropdown {
+        height: var(--input-small);
+        width: 80%;
+    }
+
+    .currency-item__input .p-inputnumber.take-payment__input--small {
+        width: 100%;
+    }
+
+    .p-inputtext.take-payment__input--small,
+    .p-inputnumber.take-payment__input--small {
+        height: var(--input-small);
+        width: 78%;
+    }
+}
+
+.take-payment__item {
+
+    .currency-item__input .input-icon,
+    .date-item__icon {
+        height: var(--input-regular);
+        width: var(--input-regular);
+    }
+}
+
+.take-payment__info {
+    border-left: 1px solid var(--admss-app-light-grey);
+    padding-left: 20px;
+    height: 100%;
+
+    .account-note {
+        height: 156px;
+        position: relative;
+        border-bottom: none;
+    }
+
+    .account-note:first-child {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+.take-payment .form-line {
+    margin: 12px 0;
+}
+
+
+.take-payment__info .info-section {
+    margin-bottom: 30px;
+}
+
+.take-payment__info .info-section__details {
+    row-gap: 0.66rem;
+}
+
+.take-payment__info .account-note:first-child {
+    margin-bottom: 30px;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight.account-tab__header .p-tabview-nav-link {
+    color: var(--admss-app-main-blue);
+    border-bottom: 2px solid var(--admss-app-main-blue);
+}

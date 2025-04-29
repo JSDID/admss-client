@@ -1,0 +1,149 @@
+.account-promise__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 210px;
+    font-weight: 700;
+}
+
+.p-menu .p-menuitem-link .p-menuitem-icon,
+.p-menu .p-menuitem-link .p-menuitem-icon:hover,
+.p-button-icon.pi-circle {
+    &.pi-circle--red {
+        color: var(--admss-app-red);
+    }
+
+    &.pi-circle--yellow {
+        color: var(--admss-app-yellow);
+    }
+
+    &.pi-circle--blue {
+        color: var(--admss-app-main-blue);
+    }
+
+    &.pi-circle--grey {
+        color: var(--admss-app-medium-grey);
+    }
+}
+
+.account-promise__table {
+    .p-button-icon-only.p-button-text {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        border: none;
+        background: transparent;
+        &:enabled:hover,
+        &:enabled:focus,
+        &:enabled:active {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.add-promise {
+    flex: 0 0 660px;
+    .add-promise__textarea {
+        height: 130px;
+        resize: none;
+    }
+    .p-dialog-footer {
+        padding: 30px 0 46px 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .p-button {
+            display: inline-flex;
+            margin: 0 10px;
+            width: 220px;
+            padding: 0;
+            height: 60px;
+        }
+    }
+}
+
+.promise-to-pay-warning.p-confirm-dialog {
+    width: 506px;
+    height: 452px;
+
+    .p-confirm-dialog-accept.p-button {
+        display: inline-flex;
+        padding: 0;
+        width: 130px;
+        height: 60px;
+        .p-button-label {
+            white-space: nowrap;
+            font-size: 20px;
+        }
+    }
+
+    .p-confirm-dialog-reject {
+        display: none;
+    }
+}
+
+.account__split-button-menu {
+    padding: 0;
+    .p-menu-list {
+        .p-menuitem {
+            height: 52px;
+            cursor: pointer;
+            padding-left: 4px;
+            display: flex;
+            align-items: center;
+
+            .p-menuitem-link {
+                width: 100%;
+                height: 100%;
+            }
+            .p-menuitem-link.p-disabled {
+                pointer-events: stroke;
+                .p-menuitem-text,
+                .p-menuitem-icon {
+                    color: var(--admss-app-light-grey);
+                }
+            }
+
+            .p-menuitem-link:hover.p-disabled {
+                .p-menuitem-text,
+                .p-menuitem-icon {
+                    color: var(--admss-app-medium-grey);
+                }
+            }
+
+            .p-menuitem-link:not(.p-disabled):hover {
+                border: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.promise-confirm-dialog {
+    .p-dialog-content {
+        padding-top: 28px;
+    }
+    .confirm-header__icon {
+        font-size: 5.5rem;
+        padding-bottom: 35px;
+    }
+
+    .p-dialog-footer {
+        padding-top: 42px;
+        padding-bottom: 50px;
+        .p-button {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            width: 130px;
+            height: 60px;
+        }
+    }
+}

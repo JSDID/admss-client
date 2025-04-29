@@ -1,0 +1,124 @@
+.identification__dropdown {
+    height: 50px;
+}
+
+.identification__line {
+    border: none;
+    border-top: 1px solid var(--admss-app-light-grey);
+    margin-top: 12px;
+}
+
+.identification__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.identification-dl__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+}
+.contact-upload {
+    height: 282px;
+    width: 514px;
+}
+
+.contact-upload:has(.upload-empty) {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--admss-app-white-blue);
+    border-radius: 5px;
+    border: 1px dotted var(--admss-app-medium-blue);
+}
+
+.contact-upload .dl-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.contact-upload:not(.upload-empty) .dl-header.dl-header__active {
+    display: none;
+}
+
+.contact-upload .p-fileupload-content {
+    padding: 0;
+}
+
+.contact-upload .upload-empty__image {
+    translate: 0 25%;
+}
+
+.contact-upload .upload-empty__icon {
+    width: 50px;
+    height: 40px;
+    margin: 20px 0 10px;
+}
+
+.contact-upload .p-fileupload-content:has(.upload-empty) {
+    background-color: transparent;
+    border: none;
+    padding-bottom: 0;
+}
+
+.contact-upload:has(.upload-empty) .p-button {
+    background-color: var(--admss-app-main-blue);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-upload:has(.upload-empty) .p-button:enabled:hover,
+.p-button:not(button):not(a):not(.p-disabled):hover {
+    background-color: var(--admss-app-medium-blue);
+}
+
+.dl__upload-icon-label {
+    width: 60%;
+    font-weight: 600;
+}
+
+.upload-empty .dl__line {
+    border-top: 1px solid var(--admss-app-medium-blue);
+}
+
+.p-fileupload .p-fileupload-row .dl-presentation {
+    padding: 0;
+}
+
+.dl-presentation {
+    height: 282px;
+    overflow: hidden;
+
+    .p-image-preview-container:hover > .p-image-preview-indicator {
+        background-color: transparent;
+    }
+
+    img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .dl-presentation__remove-button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--admss-app-main-blue);
+        &:hover {
+            color: var(--admss-app-medium-blue);
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.down-payment {
+    .p-datatable .p-datatable-thead > tr > th:last-child {
+        border-left: none;
+    }
+
+    .p-datatable .p-datatable-tbody > tr {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        :has(.down-payment__table-button) {
+            border-left: none;
+        }
+    }
+}
+.down-payment__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 210px;
+    font-weight: 700;
+}
+
+.down-payment__label {
+    color: var(--admss-app-main-blue);
+}
+
+.down-payment__table-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 60px;
+    height: 40px;
+    margin: 0;
+}

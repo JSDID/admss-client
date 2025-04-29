@@ -1,0 +1,17 @@
+.pay-off__button {
+    width: 100%;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 20px auto 0px;
+}
+
+.take-payment__sign {
+    color: var(--admss-app-main-blue);
+}
+
+.take-payment__warning-sign {
+    color: var(--admss-app-red);
+    font-weight: 800;
+    font-size: 20px;
+    padding: 0 5px;
+}

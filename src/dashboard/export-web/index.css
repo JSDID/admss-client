@@ -1,0 +1,182 @@
+.export-web__icon-button.p-button {
+    color: var(--admss-app-primary-main-green);
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.export-web__body .p-datatable-wrapper {
+    height: 62vh;
+}
+
+.export-web__body .p-tabview-panels {
+    padding-bottom: 0;
+}
+
+.export-web__icon-button.p-button:last-child {
+    color: var(--admss-app-primary);
+}
+
+.export-web__icon-button.p-button:hover {
+    color: var(--admss-app-primary-main-green);
+    background: transparent;
+}
+
+.export-web-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+}
+
+.export-web-controls__button {
+    width: 160px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.export-web .p-button.p-button-icon-only,
+.export-web .p-button.p-button-icon-only .pi {
+    font-size: 22px;
+}
+
+.export-web-controls__button-icon {
+    margin-left: 10px;
+    line-height: 1;
+}
+
+.export-web-controls__input {
+    width: 230px;
+    height: 100%;
+}
+
+.export-web-service {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.row--selected {
+    background: var(--admss-app-light-green);
+}
+
+.row--deleted {
+    color: var(--admss-app-light-grey);
+}
+
+.export-web-service__input {
+    width: 100%;
+    .p-inputnumber-input {
+        width: 100%;
+        height: 34px;
+        border: 1px solid var(--admss-app-light-grey);
+    }
+}
+
+.export-web-table tr td:has(.row--selected) {
+    background: var(--admss-app-light-green);
+}
+
+.expanded-row {
+    width: 100%;
+    display: flex;
+    column-gap: 45px;
+}
+
+.expanded-row__label {
+    font-weight: 700;
+    flex: 0 1 20%;
+    text-align: right;
+}
+
+.expanded-row__text {
+    flex: 0 1 80%;
+    text-wrap: wrap;
+}
+
+.export-web .card-header {
+    align-items: stretch;
+}
+
+.export-web .p-tabview .p-tabview-nav {
+    margin: 0 1.25rem;
+    border-bottom: 2px solid var(--admss-app-light-grey);
+}
+
+.p-tabview .p-tabview-nav li.export-web__header .p-tabview-nav-link {
+    font-weight: 700;
+    color: var(----admss-app-primary);
+}
+
+.p-tabview .p-tabview-nav li.export-web__header .p-tabview-nav-link {
+    border: none;
+    border-bottom: 2px solid var(--admss-app-light-grey);
+}
+
+.p-tabview .p-tabview-nav li.p-highlight.export-web__header .p-tabview-nav-link {
+    color: var(--admss-app-main-blue);
+    border-bottom: 2px solid var(--admss-app-main-blue);
+}
+
+.p-tabview
+    .p-tabview-nav
+    li.export-web__header:not(.p-highlight):not(.p-disabled):hover
+    .p-tabview-nav-link {
+    color: var(--admss-app-main-blue);
+    border-color: transparent;
+    border-bottom-color: var(--admss-app-light-grey);
+}
+
+.export-web__header-count {
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--admss-app-light-grey);
+}
+
+.export-web__header-count--active {
+    color: var(--admss-app-main-blue);
+}
+
+.export-web__search,
+.export-web__search .p-inputtext {
+    width: 180px;
+}
+
+.expanded-row__link-text {
+    color: var(--admss-app-main-blue);
+    font-weight: 600;
+}
+
+.export-web__input-price .p-inputnumber-input {
+    width: 100%;
+    height: 34px;
+    padding: 0.25rem;
+    border: 1px solid var(--admss-app-light-grey);
+}
+
+.price-change-confirm-dialog {
+    width: 392px;
+    height: 478px;
+
+    .confirm-header__icon {
+        color: var(--admss-app-primary-main-green);
+        scale: -1 1;
+    }
+
+    .p-dialog-footer .p-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        height: 60px;
+        width: 130px;
+    }
+}

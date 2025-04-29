@@ -1,0 +1,331 @@
+.reports.card {
+    height: 986px;
+    overflow-y: auto;
+}
+
+.p-tree.reports__tree {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+
+    & .p-treenode-content:has(.reports-accordion-header__info) {
+        .p-tree-toggler {
+            visibility: visible;
+        }
+    }
+
+    .p-treenode-children {
+        padding: 0;
+
+        .p-treenode-children {
+            padding-left: 1.25rem;
+        }
+    }
+
+    .p-treenode-content {
+        border: 1px solid var(--admss-app-primary-main-green);
+        height: 56px;
+
+        &:has(.edit-collection),
+        &:has(.report-parameters) {
+            flex-wrap: wrap;
+            margin-bottom: 254px;
+
+            .p-tree-toggler {
+                display: none;
+            }
+
+            .reports__list-item {
+                padding-left: 2.5rem;
+                width: 100%;
+            }
+
+            .edit-collection,
+            .report-parameters {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+    .reports__list-item {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .reports__list-item:hover {
+        background-color: transparent;
+    }
+
+    .reports__list-name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+    }
+
+    .p-treenode-leaf {
+        .p-treenode-content:has(.reports__list-item--inner) {
+            border: none;
+        }
+
+        .reports__list-name {
+            font-weight: 400;
+        }
+    }
+}
+
+.reports-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.reports-tree-header__info {
+    color: var(--admss-app-medium-grey);
+    font-weight: 400;
+}
+
+.reports-header__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    gap: 10px;
+}
+
+.reports-header__button .p-button-icon,
+.reports-actions .p-button-icon-only .p-button-icon {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reports-header__search {
+    margin-left: auto;
+}
+
+.reports-header__search .p-inputtext {
+    width: 180px;
+    height: 50px;
+}
+
+.reports__list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 60px;
+    transition: background-color 0.3s;
+}
+
+.reports__list-item:not(.reports__list-item--inner) {
+    padding-right: 1.25rem;
+}
+
+.reports__list-item--inner {
+    padding-right: 1.25rem;
+}
+
+.reports__list-item:hover {
+    background-color: var(--admss-app-light-green);
+}
+
+.reports__list-item .reports-actions {
+    margin-left: auto;
+    gap: 15px;
+}
+
+.reports-actions .p-button-icon-only {
+    width: 40px;
+    height: 40px;
+}
+
+.reports-actions .p-button-icon-only .p-button-icon {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.reports-actions .p-button-icon-only.reports-actions__add-button .p-button-icon {
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+
+.reports-actions__wrapper-empty {
+    width: 176px;
+    height: 40px;
+    transform: translateX(-176px) translateY(-40px);
+
+    .p-menu-list {
+        height: 40px;
+
+        .p-menuitem .p-menuitem-link {
+            padding: 0.75rem 0.5rem;
+
+            .p-menuitem-text {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1;
+                color: var(--admss-app-medium-grey);
+            }
+        }
+    }
+}
+
+.edit-collection.p-panel .p-panel-content {
+    border: 1px solid var(--admss-app-focus-green);
+    border-radius: 5px;
+    background-color: var(--admss-app-lightest-green);
+}
+
+.edit-collection__title,
+.report-parameters__title {
+    color: var(--admss-app-primary-main-green);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+}
+
+.edit-collection__multiselect {
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.edit-access .p-multiselect .p-multiselect-token {
+    background: var(--admss-app-primary-main-green);
+    color: var(--admss-app-white);
+}
+
+.reports-actions__button.p-button.p-button-outlined {
+    height: 40px;
+    margin-left: auto;
+    background: var(--admss-app-white);
+}
+
+.p-disabled .reports-actions__button.p-button.p-button-outlined {
+    user-select: all;
+    pointer-events: all;
+}
+
+.reports-tree-header__label {
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--admss-app-warning-blue);
+    background-color: var(--admss-app-white);
+    border: 1px solid var(--admss-app-warning-blue);
+}
+
+.p-dialog.edit-access {
+    width: 690px;
+
+    .p-dialog-content-body {
+        height: 618px;
+    }
+}
+
+.access-field {
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.edit-access__dropdown {
+    width: 236px;
+}
+
+.access-field--green {
+    color: var(--admss-app-primary-main-green);
+}
+
+.p-panel .close-button {
+    color: var(--admss-app-blue-text);
+}
+
+.p-panel .close-button {
+    color: var(--admss-app-blue-text);
+    right: 20px;
+}
+
+.p-panel-content .close-button {
+    top: 10px;
+}
+
+.reports-header .close-button {
+    top: 90px;
+}
+
+.edit-collection__button {
+    display: inline-flex;
+    font: 18px sans-serif;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    font-weight: 600;
+}
+
+.multiselect-label:not(:last-of-type):after {
+    content: ", ";
+}
+
+.p-multiselect-items-wrapper.edit-collection__multiselect-wrapper {
+    min-height: 100px;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.report-parameters {
+    border: 1px solid var(--admss-app-focus-green);
+    border-radius: 5px;
+    background-color: var(--admss-app-lightest-green);
+    padding: 1.25rem;
+}
+
+.report-parameters-dialog {
+    width: 477px;
+    .p-dialog-content-body {
+        padding-top: 14px;
+        gap: 20px;
+        position: relative;
+
+        .p-error {
+            bottom: -18px;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+            width: 100%;
+            justify-content: center;
+            left: 0;
+        }
+    }
+
+    .p-dialog-footer {
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .p-dialog-footer button.p-button {
+        display: inline-flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 219px;
+        height: 59px;
+    }
+}
+
+.reports-actions__menu.p-menu .p-menuitem-link {
+    height: auto;
+}

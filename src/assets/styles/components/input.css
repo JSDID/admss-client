@@ -1,0 +1,18 @@
+.p-inputtext {
+    height: 50px;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight,
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+    background: var(--admss-app-success);
+    border-color: var(--admss-app-success);
+}
+
+.p-error {
+    font-size: 0.77rem;
+    margin-left: 12px;
+}
+
+.p-inputtext:enabled:focus + .float-label {
+    margin: 0;
+}

@@ -1,0 +1,89 @@
+.general-settings {
+    --card-height: 83vh;
+    --card-max-height: 983px;
+    --content-height: 600px;
+    --title-height: 63px;
+}
+
+.general-settings .card {
+    padding: 40px;
+    padding-right: 30px;
+    height: calc(var(--card-height) + var(--title-height));
+    max-height: var(--card-max-height);
+}
+
+.settings-form {
+    height: calc(var(--content-height) + var(--title-height));
+    max-height: calc(var(--content-height) + var(--title-height));
+    padding-right: 30px;
+}
+
+.general-settings__tabs {
+    display: flex;
+    border-right: 2px solid var(--admss-app-light-blue);
+}
+
+.general-settings__tabs .p-tabview-nav {
+    flex-direction: column;
+    flex: 0 0;
+    width: 343px;
+    border: none;
+    min-height: 527px;
+    height: 100%;
+    gap: 10px;
+}
+
+.general-settings__tabs .p-tabview-panels {
+    flex: 1;
+    padding: 0;
+    padding-left: 40px;
+    border-left: 2px solid var(--admss-app-light-blue);
+    border-radius: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.general-settings__tabs > .p-tabview-nav-container a.p-tabview-nav-link {
+    color: var(--admss-app-primary);
+    border: none;
+}
+
+.p-tabview .p-tabview-nav .p-tabview-selected .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none;
+}
+
+.general-settings__tabs > .p-tabview-nav-container a.p-tabview-nav-link[aria-selected="true"] {
+    color: var(--admss-app-primary);
+    background: var(--admss-app-light-blue);
+    border-radius: 0;
+}
+
+.general-settings .p-slider .p-slider-handle {
+    border-radius: 50%;
+    background: #fff;
+}
+
+.general-settings .p-slider .p-slider-handle:focus {
+    box-shadow: none;
+}
+
+.settings-form__title {
+    height: var(--title-height);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.general-settings .card-header__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.general-settings__buttons {
+    display: flex;
+    height: 162px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+    padding-right: 30px;
+}

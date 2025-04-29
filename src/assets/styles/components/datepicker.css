@@ -1,0 +1,24 @@
+.p-datepicker {
+    border: none;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month,
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year,
+.p-datepicker-calendar thead {
+    color: var(--admss-app-success);
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-prev,
+.p-datepicker .p-datepicker-header .p-datepicker-next {
+    color: var(--admss-darkest-grey);
+}
+
+.p-datepicker-calendar thead th {
+    text-align: center;
+}
+
+.p-datepicker table td.p-datepicker-today > span {
+    background-color: var(--admss-app-success);
+    color: #fff;
+    border-radius: 50%;
+}

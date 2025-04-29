@@ -1,0 +1,44 @@
+.p-button.inventory-print__action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.inventory-print__button .icon {
+    font-size: 20px;
+}
+
+.inventory-print__table-action {
+    width: 4rem;
+}
+
+.p-datatable.inventory-print__table .p-datatable-tbody > tr.p-highlight {
+    background: #ddfee6;
+    color: var(--admss-app-blue-text);
+}
+
+.inventory-print .p-datatable-thead tr th {
+    border: none;
+}
+
+.inventory-print .p-datatable .p-button {
+    height: 40px;
+}
+
+.inventory-print__control {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+}
+
+.inventory-print__button {
+    font-weight: 700;
+    font-size: 24px;
+    width: 245px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

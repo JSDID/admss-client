@@ -1,0 +1,160 @@
+.general-inventory-option {
+    .react-grid-item.react-grid-placeholder {
+        background-color: var(--admss-app-lightest-grey);
+        z-index: 1;
+        border-bottom: 1px solid var(--admss-app-medium-blue);
+        position: relative;
+    }
+
+    .react-draggable-dragging {
+        z-index: 2;
+    }
+
+    .settings-inventory__header {
+        display: flex;
+        align-items: center;
+        .settings-inventory__number {
+            padding-left: 10px;
+            flex: 0 0 45px;
+        }
+        .settings-inventory__name {
+            flex: 1;
+        }
+    }
+    .option-control {
+        display: flex;
+        width: 14%;
+        align-items: center;
+        padding: 0;
+        gap: 9px;
+
+        .p-button {
+            width: 22px;
+            &:enabled:hover,
+            &:enabled:active {
+                background-color: transparent;
+                opacity: 0.8;
+            }
+        }
+
+        .option-control__button.p-button .p-button-icon {
+            font-size: 19px;
+        }
+    }
+    .inventory-options__delete.p-button.p-button-text {
+        color: var(--admss-app-light-grey);
+        transition: ease-in-out 0.3s;
+        width: 20px;
+        height: 20px;
+    }
+
+    .inventory-options__delete.p-button.p-button-text:enabled:hover {
+        color: var(--admss-darkest-grey);
+
+        background: transparent;
+    }
+
+    .inventory-option-wrapper {
+        margin-right: -10px;
+    }
+
+    .inventory-options-container {
+        display: flex;
+        position: relative;
+    }
+
+    .inventory-numbers {
+        width: 60px;
+        margin-top: 0.6rem;
+        background-color: var(--admss-app-white);
+        z-index: 10;
+        gap: 1px;
+        display: flex;
+        flex-direction: column;
+        .inventory-option-number {
+            display: flex;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--admss-app-green);
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 45px;
+            border-bottom: 1px solid var(--admss-app-medium-blue);
+        }
+        &.inventory-numbers--left {
+            margin-right: -10px;
+            padding-left: 10px;
+        }
+        &.inventory-numbers--right {
+            position: absolute;
+            right: 43%;
+            @media (max-width: 1500px) {
+                right: 42.5%;
+            }
+            @media (max-width: 1206px) {
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .inventory-content {
+        flex: 1;
+    }
+
+    .settings-inventory__row {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: var(--admss-app-white);
+        border-bottom: 1px solid var(--admss-app-medium-blue);
+
+        .row-edit {
+            width: 240px;
+            height: 35px;
+            .p-button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .row-edit__input {
+            width: 200px;
+            height: 35px;
+        }
+
+        .settings-inventory__description {
+            width: 250px;
+            height: 100%;
+
+            align-items: center;
+        }
+
+        .inventory-options__delete-button {
+            color: var(--admss-app-light-grey);
+        }
+    }
+
+    .layout {
+        margin-top: 10px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+}
+
+.settings-form__button.p-button-warning.p-button-outlined {
+    color: var(--admss-app-yellow);
+    &:hover:enabled {
+        color: var(--admss-app-yellow);
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,8 @@
+.p-button {
+    height: 50px;
+    border-radius: 5px;
+}
+
+.p-button.p-button-icon-only {
+    width: 50px;
+}

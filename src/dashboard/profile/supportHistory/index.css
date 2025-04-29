@@ -1,0 +1,26 @@
+.history-support {
+    width: 952px;
+}
+
+.history-support .p-datatable-thead {
+    height: 42px;
+}
+
+.history-support .p-datatable .p-datatable-thead th,
+.history-support .p-datatable .p-datatable-tbody td {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+}
+
+.history-support .p-datatable .p-datatable-tbody tr:not(.p-datatable-emptymessage):first-child {
+    color: var(--admss-app-primary-main-green);
+}
+
+.history-support .row:hover {
+    color: red;
+    background: var(--admss-app-dark-green);
+}
+
+.history-support .p-datatable .p-datatable-tbody .datatable-hidden {
+    white-space: wrap;
+}

@@ -1,0 +1,117 @@
+.deal__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.deal-top-controls {
+    display: flex;
+    gap: 20px;
+}
+
+.deal__accordion {
+    border: none;
+    width: 343px;
+}
+
+.deal__accordion .p-accordion-header .p-accordion-header-link,
+.deal__accordion .p-accordion-header.p-highlight:hover .p-accordion-header-link:hover,
+.deal__accordion
+    .p-accordion-header:not(.p-highlight):not(.p-disabled):hover
+    .p-accordion-header-link,
+.deal__accordion .p-accordion-header.p-highlight .p-accordion-header-link[aria-expanded="true"] {
+    border: none;
+    background: white;
+    box-shadow: none;
+    background-color: white;
+}
+
+.deal__accordion .p-steps .p-steps-item .p-menuitem-link:not(.p-disabled):focus,
+.deal__accordion .p-steps .p-steps-item .p-menuitem-link:focus {
+    box-shadow: none;
+}
+
+.deal__accordion .p-accordion-content {
+    padding: 0;
+    border: none;
+}
+
+.deal-form {
+    width: 100%;
+    padding: 0 40px;
+    min-height: 705px;
+    border-right: 2px solid var(--admss-app-light-blue);
+    border-left: 2px solid var(--admss-app-light-blue);
+}
+
+.deal-form__title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-line {
+    width: 100%;
+    padding: 0;
+    border-top: var(--admss-app-light-grey);
+    margin: 28px 0;
+}
+
+.deals__dropdown {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.p-button.deal__print-nav {
+    background-color: transparent;
+    color: var(--admss-app-primary);
+    font-weight: 600;
+    border: none;
+}
+
+.p-button.deal__print-nav:focus,
+.p-button.deal__print-nav:active,
+.p-button.deal__print-nav:hover,
+.p-button.deal__print-nav--active {
+    outline: none;
+    box-shadow: none;
+    color: var(--admss-app-primary);
+    background-color: var(--admss-app-light-blue);
+}
+
+.p-button.deal__print-nav .p-button-icon {
+    color: var(--admss-app-green);
+}
+
+.deal .p-dropdown {
+    height: 50px;
+    width: 100%;
+}
+
+.deal .p-inputtext {
+    width: 100%;
+}
+
+.trade-overwrite {
+    display: flex;
+    align-items: center;
+}
+
+.trade-overwrite__label {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.trade-overwrite__icon {
+    margin-left: 6px;
+    padding-top: 2px;
+    font-size: 16px;
+    color: var(--admss-app-main-blue);
+}
+
+.card-content__wrapper:has(.deal__accordion) {
+    flex: 0 0 343px;
+}

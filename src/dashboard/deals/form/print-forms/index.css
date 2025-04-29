@@ -1,0 +1,100 @@
+.p-button.deal-print__action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 10px;
+    font-weight: 600;
+    height: 40px;
+}
+
+.deal-print__accordion {
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+.deal-print__control {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 0;
+}
+
+.deal-form:has(.deal-print) {
+    min-height: 610px;
+    margin-bottom: 0px;
+}
+
+.deal-print__button {
+    font-weight: 700;
+    font-size: 24px;
+    width: 245px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deal-print__header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    gap: 20px;
+    font-weight: 600;
+    background-color: var(--admss-app-light-blue);
+}
+
+.deal-print__accordion .p-accordion-header .p-accordion-header-link,
+.p-accordion
+    .deal-print__accordion-tab.p-accordion-header:not(.p-disabled).p-highlight
+    .p-accordion-header-link {
+    background-color: var(--admss-app-white);
+    padding-left: 30px;
+    border: none;
+    border-bottom: 1px solid var(--admss-app-light-grey);
+}
+
+.p-accordion
+    .deal-print__accordion-tab.p-accordion-header:not(.p-highlight):not(.p-disabled):hover
+    .p-accordion-header-link {
+    background-color: var(--admss-app-white);
+}
+
+.deal-print .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+.deal-print__accordion .deal-print__accordion-tab:first-child .p-accordion-header-link {
+    border-radius: 0;
+}
+
+.deal-print .p-accordion-content {
+    border: none;
+    padding: 0;
+}
+
+.deal-print .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+    rotate: 90deg;
+}
+
+.p-accordion
+    .deal-print__accordion-tab.p-accordion-header:not(.p-disabled).p-highlight
+    .p-accordion-header-link
+    .p-accordion-toggle-icon {
+    rotate: 180deg;
+}
+
+.deal-print__list-item {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    gap: 10px;
+    border-bottom: 1px solid var(--admss-app-light-grey);
+}
+
+.deal-print__list-item--selected {
+    background-color: var(--admss-app-light-green);
+}

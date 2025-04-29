@@ -1,0 +1,56 @@
+.account__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.account-top-controls {
+    display: flex;
+    gap: 20px;
+}
+
+.account__accordion {
+    border: none;
+    width: 343px;
+}
+
+.account__accordion .p-accordion-header .p-accordion-header-link,
+.account__accordion .p-accordion-header.p-highlight:hover .p-accordion-header-link:hover,
+.account__accordion
+    .p-accordion-header:not(.p-highlight):not(.p-disabled):hover
+    .p-accordion-header-link,
+.account__accordion .p-accordion-header.p-highlight .p-accordion-header-link[aria-expanded="true"] {
+    border: none;
+    background: white;
+    box-shadow: none;
+    background-color: white;
+}
+
+.account__accordion .p-steps .p-steps-item .p-menuitem-link:not(.p-disabled):focus,
+.account__accordion .p-steps .p-steps-item .p-menuitem-link:focus {
+    box-shadow: none;
+}
+
+.account__accordion .p-accordion-content {
+    padding: 0;
+    border: none;
+}
+
+.account-form {
+    width: 100%;
+    padding: 0 40px;
+    min-height: 705px;
+    border-right: 2px solid var(--admss-app-light-blue);
+    border-left: 2px solid var(--admss-app-light-blue);
+}
+
+.account-form__title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.p-dialog-top {
+    padding-top: 16vh;
+}

@@ -1,0 +1,14 @@
+.account-info__button.p-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--admss-app-main-blue);
+    height: 54px;
+    font-weight: 700;
+    width: 100%;
+    &:hover:enabled {
+        color: var(--admss-app-dark-blue);
+        background: var(--admss-app-white);
+        border-color: var(--admss-app-dark-blue);
+    }
+}

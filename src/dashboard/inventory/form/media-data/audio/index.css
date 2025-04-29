@@ -1,0 +1,78 @@
+.media-audio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+    padding-top: 50px;
+    color: var(--admss-app-light-grey);
+}
+
+.media-audio__image {
+    border-radius: 5px;
+}
+
+.media-audio__item {
+    display: flex;
+    width: 48%;
+    box-shadow: 1px 1px 5px 0px rgba(41, 93, 194, 0.5);
+    padding: 15px;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.audio-info {
+    margin-left: 20px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: space-around;
+}
+
+.audio-info__item {
+    color: var(--admss-app-primary);
+    font-size: 14px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.media-audio__item > .media-uploaded__checkbox {
+    margin-left: 0;
+}
+
+.audio-info__icon {
+    color: var(--admss-app-primary-main-green);
+}
+
+.audio-info__text--bold {
+    font-weight: 600;
+}
+
+.media-audio__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.media-audio__close:hover {
+    color: var(--admss-app-light-grey);
+}
+
+.audio-choose,
+.audio-choose__selected > .media__button {
+    font-size: 16px;
+}
+
+.presentation__audio {
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.audio-choose .info-panel__panel {
+    min-width: 418px;
+}

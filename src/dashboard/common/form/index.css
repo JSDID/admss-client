@@ -1,0 +1,23 @@
+.form__button {
+    font-weight: 600;
+    width: 245px;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: center;
+    height: 70px;
+    transition: opacity 0.4s;
+}
+
+.form__button.p-button.p-button-success:enabled:focus {
+    box-shadow: none;
+}
+
+.form__button--danger {
+    background-color: var(--admss-app-red);
+    border: none;
+}
+
+.p-button.form__button:hover {
+    background-color: var(--admss-app-red);
+    opacity: 0.6;
+}

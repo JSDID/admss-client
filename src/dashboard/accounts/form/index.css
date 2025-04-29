@@ -1,0 +1,194 @@
+.account__tabs {
+    display: flex;
+}
+
+.account-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.account__tabs > .p-tabview-nav-container .p-tabview-nav {
+    flex-direction: column;
+    flex: 0 0;
+    width: 342px;
+    border: none;
+    min-height: 527px;
+
+    gap: 10px;
+}
+
+.account__tabs .p-tabview-panels {
+    flex: 0 1 80%;
+    border-left: 2px solid var(--admss-app-light-blue);
+    padding-top: 0;
+}
+
+.account__tabs > .p-tabview-nav-container a.p-tabview-nav-link {
+    color: var(--admss-app-primary);
+    border: none;
+}
+
+.p-tabview .p-tabview-nav .p-tabview-selected .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none;
+}
+
+.account__tabs > .p-tabview-nav-container a.p-tabview-nav-link[aria-selected="true"] {
+    color: var(--admss-app-primary);
+    background: var(--admss-app-light-blue);
+    border-radius: 0;
+}
+
+.account__footer {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 60px;
+    align-items: center;
+    width: 65.5%;
+    justify-content: flex-end;
+}
+
+.account__footer .account__button.p-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-weight: 700;
+    width: 200px;
+}
+
+.account__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 210px;
+    font-weight: 700;
+}
+
+.account-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.account__body {
+    row-gap: 10px;
+}
+
+.account__table.p-datatable {
+    flex-grow: 1;
+    height: 474px;
+    min-height: 26vh;
+
+    .account__table-checkbox {
+        border-right: none;
+    }
+
+    .account__table-checkbox + td,
+    .account__table-checkbox + th {
+        border-left: 0;
+    }
+
+    .p-datatable {
+        height: 100%;
+
+        .p-datatable-wrapper {
+            height: 100%;
+        }
+    }
+}
+
+.account__control {
+    display: flex;
+    height: 72px;
+    gap: 25px;
+    flex-grow: 0;
+}
+
+.account__dropdown {
+    flex: 0 0 245px;
+}
+
+.account__split-button {
+    width: 245px;
+    font-weight: 700;
+}
+
+.account__split-button .p-button {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    font-weight: 700;
+    font-size: 22px;
+    .p-button-icon {
+        font-size: 20px;
+    }
+}
+
+.account__split-button.p-splitbutton .p-splitbutton-defaultbutton .p-button-label {
+    flex: 0;
+    padding-right: 15px;
+    white-space: nowrap;
+}
+
+.account__split-button.p-splitbutton .p-splitbutton-menubutton {
+    border-left: none;
+}
+
+.account__split-button.p-splitbutton .p-splitbutton-menubutton::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 1px;
+    height: 80%;
+    background: var(--admss-app-dark-green);
+    opacity: 0.2;
+}
+
+.account__split-button.p-splitbutton
+    .p-splitbutton-menubutton[aria-expanded="true"]
+    .p-button-icon {
+    rotate: 180deg;
+}
+
+.account-warning {
+    width: 455px;
+    min-height: 450px;
+
+    .p-confirm-dialog-accept.p-button,
+    .p-confirm-dialog-reject.p-button {
+        display: inline-flex;
+        padding: 0;
+        align-items: center;
+        width: 130px;
+        height: 60px;
+        white-space: nowrap;
+    }
+}
+
+.account-warning:not(.account-warning--reject) .p-confirm-dialog-reject {
+    display: none;
+}
+
+.account__body .p-datatable:has(.p-datatable-emptymessage) .p-datatable-thead > tr > th,
+.account__body .p-datatable:has(.p-datatable-emptymessage) .p-datatable-tbody > tr > td {
+    border: none;
+}
+
+.account {
+    .p-dropdown {
+        display: inline-flex;
+        align-items: center;
+
+        .p-dropdown-label {
+            height: 100%;
+            line-height: 1.75rem;
+        }
+    }
+}

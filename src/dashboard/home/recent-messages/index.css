@@ -1,0 +1,53 @@
+.messages-more.p-button.p-button-text {
+    text-align: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--admss-darkest-grey);
+    &:enabled:hover {
+        background: none;
+        border: none;
+        color: var(--admss-darkest-grey);
+    }
+    &:enabled:focus {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.table-message {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-message thead {
+    background: var(--admss-app-light-blue);
+    text-align: left;
+}
+
+.table-message .p-datatable-thead tr th,
+.table-message .p-datatable-tbody tr td {
+    padding: 8px 10px;
+}
+
+.table-message .p-datatable-tbody tr:not(.p-datatable-emptymessage):first-child td {
+    color: var(--admss-app-green);
+    font-weight: 600;
+}
+
+.table-message .p-datatable-thead tr th {
+    color: var(--admss-app-main-blue);
+    border: none;
+    font-weight: 700;
+}
+
+.table-message tr {
+    border-bottom: 1px solid var(--admss-app-light-grey);
+}
+
+.table-message tr:last-child {
+    border: none;
+}

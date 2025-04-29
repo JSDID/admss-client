@@ -1,0 +1,23 @@
+.dialog__task-summary {
+    width: 571px;
+}
+
+.task-summary__body {
+    padding-top: 10px;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.task-summary__row {
+    display: flex;
+}
+
+.task-summary__row-title {
+    flex: 0 1 30%;
+    font-weight: 600;
+}
+
+.task-summary__row-value {
+    flex: 0 0 70%;
+}
+

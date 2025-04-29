@@ -1,0 +1,27 @@
+.vehicle-checks__top,
+.vehicle-checks__bottom {
+    row-gap: 25px;
+}
+
+.vehicle-checks__top {
+    max-height: 182px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--admss-app-lightest-grey);
+}
+
+.vehicle-checks__bottom {
+    max-height: 226px;
+    width: 100%;
+}
+
+.vehicle-checks__column {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.vehicle-checks__checkbox {
+    color: var(--admss-app-primary);
+}

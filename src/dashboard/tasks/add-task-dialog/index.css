@@ -1,0 +1,46 @@
+.dialog__add-task {
+    width: 660px;
+    height: 872px;
+
+    .p-dialog-header {
+        padding-bottom: 8px;
+    }
+
+    .p-dialog-content-body {
+        padding-top: 20px;
+        gap: 30px;
+    }
+
+    .p-error {
+        top: 50px;
+        display: inline-flex;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        right: 0;
+    }
+
+    .p-calendar.p-inputwrapper {
+        width: 220px;
+    }
+
+    .p-dialog-footer {
+        display: flex;
+        height: 139px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .p-dialog-footer .p-button {
+        display: inline-flex;
+        width: 220px;
+        height: 59px;
+        margin-bottom: 10px;
+    }
+}
+
+.p-dialog .p-dialog-description {
+    height: 130px;
+}

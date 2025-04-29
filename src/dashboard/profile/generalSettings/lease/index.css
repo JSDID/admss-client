@@ -1,0 +1,6 @@
+.currency-item__input .p-inputnumber-input,
+.settings-lease__dropdown.p-dropdown,
+.settings-lease .p-inputnumber {
+    width: 100%;
+    height: 50px;
+}

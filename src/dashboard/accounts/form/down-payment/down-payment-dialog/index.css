@@ -1,0 +1,13 @@
+.payment-dialog {
+    width: 560px;
+
+    .p-dialog-footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.payment-dialog .currency-item__input,
+.payment-dialog .p-inputnumber {
+    width: 100%;
+}

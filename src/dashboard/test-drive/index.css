@@ -1,0 +1,31 @@
+.test-drive__card {
+ display: flex;
+ flex-wrap: nowrap;
+ gap: 60px;
+}
+
+.test-drive__card-control {
+ flex: 0 0 315px;
+ margin-top: 2.85rem;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+.test-drive .test-drive__subtitle {
+ font-size: 18px;
+ text-transform: uppercase;
+ font-weight: 700;
+}
+
+.test-drive__text-area {
+ width: 100%;
+ height: 100px;
+ resize: none;
+}
+
+.test-drive__button {
+ width: 100%;
+ height: 60px;
+ text-transform: uppercase;
+ font-weight: 700;
+}

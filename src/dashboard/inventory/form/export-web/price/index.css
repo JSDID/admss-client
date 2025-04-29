@@ -1,0 +1,18 @@
+.export-web-price__label {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: var(--admss-app-primary);
+}
+
+.export-web-price__checkbox {
+    margin: 0 15px;
+}
+
+.export-web-price__item > .export-web-price__checkbox {
+    margin-left: 0;
+}
+
+.export-web-price__text-area {
+    height: 100px;
+}

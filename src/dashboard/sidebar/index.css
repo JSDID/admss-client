@@ -1,0 +1,212 @@
+.sidebar {
+    --toggler-size: 25px;
+    --icons-size: 40px;
+    position: fixed;
+    padding-top: var(--admss-app-content-top-margin);
+    left: 0;
+    width: var(--admss-app-aside-expanded-width);
+    transition: width 0.3s ease;
+    top: var(--admss-app-header-height);
+    height: calc(100vh - var(--admss-app-header-height));
+    background: var(--admss-app-main-blue);
+    z-index: 999;
+
+    &.collapsed {
+        width: var(--admss-app-aside-collapsed-width, 84px);
+    }
+}
+
+.sidebar-toggle.p-button.p-button-icon-only.p-button-rounded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    width: var(--toggler-size);
+    height: var(--toggler-size);
+    right: calc(var(--toggler-size) / -2);
+    background-color: var(--admss-app-main-blue);
+    border: 1px solid var(--admss-app-white);
+    cursor: pointer;
+    .p-button-icon {
+        font-size: 13px;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.sidebar-nav {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    color: var(--admss-app-white);
+    width: 100%;
+    gap: 30px;
+    max-height: calc(100% - 45px);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+.sidebar-nav__item {
+    flex: 0 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    cursor: pointer;
+}
+
+.sidebar-nav__item:hover {
+    background: var(--admss-app-white-blue);
+}
+
+.sidebar-nav__link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--admss-app-white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__link {
+    color: var(--admss-app-main-blue);
+}
+
+.sidebar-nav__icon {
+    margin-bottom: 5px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sidebar-nav__icon.home {
+    width: 49px;
+    height: 47px;
+    background-image: url("assets/images/icons/sidebar/normal/home_white.svg");
+}
+.sidebar.collapsed .sidebar-nav__icon.home {
+    width: 42px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.home {
+    background-image: url("assets/images/icons/sidebar/selected/home_blue.svg");
+}
+
+.sidebar-nav__icon.inventory {
+    width: 66px;
+    height: 47px;
+    background-image: url("assets/images/icons/sidebar/normal/inventory_white.svg");
+}
+
+.sidebar.collapsed .sidebar-nav__icon.inventory {
+    width: 56px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.inventory {
+    background-image: url("assets/images/icons/sidebar/selected/inventory_blue.svg");
+}
+
+.sidebar-nav__icon.contacts {
+    width: 40px;
+    height: 47px;
+    background-image: url("assets/images/icons/sidebar/normal/contacts_white.svg");
+}
+
+.sidebar.collapsed .sidebar-nav__icon.contacts {
+    width: 34px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.contacts {
+    background-image: url("assets/images/icons/sidebar/selected/contacts_blue.svg");
+}
+
+.sidebar-nav__icon.deals {
+    width: 45px;
+    height: 47px;
+    background-image: url("assets/images/icons/sidebar/normal/deals_white.svg");
+}
+
+.sidebar.collapsed .sidebar-nav__icon.deals {
+    width: 38px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.deals {
+    background-image: url("assets/images/icons/sidebar/selected/deals_blue.svg");
+}
+
+.sidebar-nav__icon.accounts {
+    width: 51px;
+    height: 47px;
+    background-image: url("assets/images/icons/sidebar/normal/accounts_white.svg");
+}
+
+.sidebar.collapsed .sidebar-nav__icon.accounts {
+    width: 43px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.accounts {
+    background-image: url("assets/images/icons/sidebar/selected/accounts_blue.svg");
+}
+
+.sidebar-nav__icon.reports {
+    width: 35px;
+    height: 47px;
+    background-image: url("assets/images/icons/sidebar/normal/reports_white.svg");
+}
+
+.sidebar.collapsed .sidebar-nav__icon.reports {
+    width: 30px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.reports {
+    background-image: url("assets/images/icons/sidebar/selected/reports_blue.svg");
+}
+
+.sidebar-nav__icon.tasks {
+    width: 37px;
+    height: 49px;
+    background-image: url("assets/images/icons/sidebar/normal/tasks_white.svg");
+}
+
+.sidebar.collapsed .sidebar-nav__icon.tasks {
+    width: 30px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.tasks {
+    background-image: url("assets/images/icons/sidebar/selected/tasks_blue.svg");
+}
+
+.sidebar-nav__icon.export-web {
+    width: 39px;
+    height: 49px;
+    background-image: url("assets/images/icons/sidebar/normal/export_to_web_white.svg");
+}
+
+.sidebar.collapsed .sidebar-nav__icon.export-web {
+    width: 32px;
+    height: 40px;
+}
+
+.sidebar-nav__item:hover .sidebar-nav__icon.export-web {
+    background-image: url("assets/images/icons/sidebar/selected/export_to_web_blue.svg");
+}

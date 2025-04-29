@@ -1,0 +1,47 @@
+.quick-pay {
+    display: grid;
+    grid-template-columns: 32.66% 32.66% 30.41%;
+    column-gap: 2.1%;
+}
+
+.quick-pay__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.quick-pay__total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .quick-pay__total-input {
+        width: 200px;
+    }
+}
+
+.quick-pay__title {
+    font-size: 32px;
+    line-height: 1;
+    margin-top: 1rem;
+}
+
+.quick-pay__input {
+    display: flex;
+
+    .p-inputnumber-input {
+        width: 200px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .p-button {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 50px;
+        height: 50px;
+        background: var(--admss-app-light-grey);
+        color: var(--admss-app-medium-grey);
+    }
+}

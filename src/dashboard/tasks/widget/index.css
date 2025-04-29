@@ -1,0 +1,97 @@
+.tasks-widget {
+    .tasks-widget__button.messages-more.p-button {
+        color: var(--admss-app-main-blue);
+        padding-left: 0;
+
+        &:enabled:hover {
+            color: var(--admss-app-medium-blue);
+        }
+    }
+}
+
+.empty-list,
+.tasks-widget-count.empty-list {
+    color: var(--admss-app-medium-grey);
+}
+
+.tasks-widget__item {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+
+    .tasks-widget__label {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--admss-app-blue-text);
+        line-height: 24.5px;
+    }
+
+}
+
+.tasks-widget-count {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--admss-app-main-blue);
+    margin-left: 6px;
+}
+
+.tasks-widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-right: 40px;
+}
+
+.add-task-control.p-button {
+    background-color: var(--admss-app-primary-main-green);
+    border-color: var(--admss-app-primary-main-green);
+    color: var(--admss-app-white);
+
+    .p-button-icon {
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+
+.tasks-widget__chip {
+    display: inline-flex;
+    cursor: default;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 20px;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 8px;
+    margin: 0 6px;
+}
+
+.tasks-widget__confirm-modal {
+    width: 380px;
+    height: 452px;
+
+    .confirm-header__icon {
+        color: var(--admss-app-primary-main-green);
+    }
+
+    .confirm-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .p-dialog-footer .p-button {
+        padding: 0;
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        font-size: 20px;
+    }
+}

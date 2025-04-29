@@ -1,0 +1,5 @@
+.p-dialog-footer .dialog__cancel-button {
+    background: var(--admss-app-white);
+    color: var(--admss-app-primary-main-green);
+    border: 1px solid var(--admss-app-primary-main-green);
+}

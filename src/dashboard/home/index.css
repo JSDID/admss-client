@@ -1,0 +1,155 @@
+.home-page {
+    .card {
+        padding: 40px;
+        .card-content__title,
+        .card-header__title {
+            font-size: 20px;
+        }
+    }
+}
+
+.contact-item__label {
+    color: var(--admss-app-main-blue);
+    font-weight: 600;
+    width: 110px;
+}
+
+.printing-menu__item {
+    margin-bottom: 15px;
+}
+
+.printing-menu__icon {
+    color: var(--admss-app-main-blue);
+    margin-right: 10px;
+}
+
+.common-tasks-menu {
+    align-items: center;
+    min-height: 180px;
+}
+
+.common-tasks-menu__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 rgba(134, 173, 251, 0.8);
+    color: var(--admss-app-main-blue);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    height: 160px;
+    width: 160px;
+}
+
+.common-tasks-menu__item:hover {
+    background: var(--admss-app-main-blue);
+    color: #fff;
+}
+
+.common-tasks-menu__item:last-child {
+    margin-right: 0;
+}
+
+.common-tasks-menu__icon {
+    height: 66px;
+    width: 86px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.common-tasks-menu__icon.new-contact {
+    background-image: url("assets/images/icons/common-tasks/normal/new_contact_blue.svg");
+}
+
+.common-tasks-menu__icon.browse-all-contacts {
+    background-image: url("assets/images/icons/common-tasks/normal/all_contacts_blue.svg");
+}
+
+.common-tasks-menu__icon.new-inventory {
+    background-image: url("assets/images/icons/common-tasks/normal/new_inventory_blue.svg");
+}
+
+.common-tasks-menu__icon.browser-all-inventory {
+    background-image: url("assets/images/icons/common-tasks/normal/all_inventory_blue.svg");
+}
+
+.common-tasks-menu__icon.new-deal {
+    background-image: url("assets/images/icons/common-tasks/normal/new_deal_blue.svg");
+}
+
+.common-tasks-menu__icon.browse-all-deals {
+    background-image: url("assets/images/icons/common-tasks/normal/all_deals_blue.svg");
+}
+
+.common-tasks-menu__icon.print-test-drive {
+    background-image: url("assets/images/icons/common-tasks/normal/print_for_test_drive_blue.svg");
+}
+
+.common-tasks-menu__item:hover .common-tasks-menu__icon.new-contact {
+    background-image: url("assets/images/icons/common-tasks/selected/new_contact_white.svg");
+}
+
+.common-tasks-menu__item:hover .common-tasks-menu__icon.browse-all-contacts {
+    background-image: url("assets/images/icons/common-tasks/selected/all_contacts_white.svg");
+}
+
+.common-tasks-menu__item:hover .common-tasks-menu__icon.new-inventory {
+    background-image: url("assets/images/icons/common-tasks/selected/new_inventory_white.svg");
+}
+
+.common-tasks-menu__item:hover .common-tasks-menu__icon.browser-all-inventory {
+    background-image: url("assets/images/icons/common-tasks/selected/all_inventory_white.svg");
+}
+
+.common-tasks-menu__item:hover .common-tasks-menu__icon.new-deal {
+    background-image: url("assets/images/icons/common-tasks/selected/new_deal_white.svg");
+}
+
+.common-tasks-menu__item:hover .common-tasks-menu__icon.browse-all-deals {
+    background-image: url("assets/images/icons/common-tasks/selected/all_deals_white.svg");
+}
+
+.common-tasks-menu__item:hover .common-tasks-menu__icon.print-test-drive {
+    background-image: url("assets/images/icons/common-tasks/selected/print_for_test_drive_white.svg");
+}
+
+.add-task-control {
+    display: inline-flex;
+    align-items: center;
+    color: var(--admss-app-success);
+    cursor: pointer;
+}
+
+.add-task-control__icon {
+    margin-right: 14px;
+    font-weight: 600;
+}
+
+.card-content__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.task-calendar {
+    max-width: 380px;
+    border-left: 1px solid var(--admss-app-light-blue);
+    .p-datepicker-calendar {
+        thead th,
+        tbody td {
+            padding: 0px;
+            width: 45px;
+        }
+
+        thead th > span,
+        tbody td > span {
+            display: inline-flex;
+            height: 30px;
+            width: 30px;
+            margin: 0px;
+        }
+    }
+}

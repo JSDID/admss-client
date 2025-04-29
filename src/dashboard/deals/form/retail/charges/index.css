@@ -1,0 +1,7 @@
+.deal-insurance-charges {
+ .deal-insurance-charges__currency-input.deal-insurance-charges__currency-input--grey {
+   .p-inputtext {
+     color: var(--admss-app-medium-grey);
+   }
+ }
+}

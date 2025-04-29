@@ -1,0 +1,143 @@
+.account-note {
+    flex: 1 1 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    position: relative;
+
+    .p-float-label {
+        flex: 1;
+    }
+
+    .account-note__input {
+        height: calc(100% - 40px);
+        border-bottom: none;
+    }
+
+    .account-note__button.p-button {
+        height: 40px;
+
+
+        &.account-note__button[aria-label="Save"] {
+            position: absolute;
+            bottom: 0;
+            border-radius: 0 0 5px 5px;
+        }
+
+        &.account-note__button[aria-label="Clear"] {
+            position: absolute;
+            width: 50%;
+            bottom: 0;
+            left: 0;
+            border-radius: 0 0 0 5px;
+        }
+
+        &.account-note__button[aria-label="Update"] {
+            position: absolute;
+            width: 50%;
+            bottom: 0;
+            right: 0;
+            border-radius: 0 0 5px 0;
+        }
+    }
+}
+
+.account-notes .account__control {
+    height: auto;
+}
+
+.account-note__input {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    resize: none;
+}
+
+.account-note__buttons {
+    display: flex;
+}
+
+.account-note__button.p-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 31px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.account-notes__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 210px;
+    font-weight: 700;
+}
+
+.account-notes__table-button.p-button {
+    color: var(--admss-app-primary-main-green);
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.account-notes__table-button.p-button:last-child {
+    color: var(--admss-app-primary);
+}
+
+.account-notes__table-button.p-button:hover {
+    color: var(--admss-app-primary-main-green);
+    background: transparent;
+}
+
+.account-notes__delete-button.p-button.p-button-text {
+    color: var(--admss-app-light-grey);
+    transition: ease-in-out 0.3s;
+    width: 20px;
+    height: 20px;
+}
+
+.account-notes__delete-button.p-button.p-button-text:enabled:hover {
+    color: var(--admss-darkest-grey);
+    background: transparent;
+}
+
+.account-note__textarea {
+    height: 200px;
+    resize: none;
+}
+
+.add-note {
+    flex: 0 0 660px;
+}
+
+.add-note__time {
+    margin-left: 10px;
+}
+
+.account__table.p-datatable {
+    .account-notes__table-action {
+        border-right: none;
+    }
+
+    .account-notes__table-action+td,
+    .account-notes__table-action+th {
+        border-left: 0;
+    }
+}
+
+.note-delete-dialog {
+    .p-dialog-footer .p-button {
+        width: 130px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 60px;
+    }
+}

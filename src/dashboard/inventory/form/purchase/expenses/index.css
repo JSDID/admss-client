@@ -1,0 +1,106 @@
+.purchase-expenses__text-area {
+    width: 105%;
+    height: 210px;
+}
+
+.purchase-expenses-controls {
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.purchase-expenses-controls__button {
+    font-size: 24px;
+    width: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase-expenses__table.p-datatable .p-column-header-content {
+    justify-content: center;
+}
+
+.purchase-expenses__table.p-datatable .p-datatable-emptymessage {
+    color: var(--admss-app-medium-grey);
+}
+.purchase-expenses__delete-button .icon,
+.purchase-expenses__table-button .icon {
+    transition: color 0.5s;
+    border: none;
+    background: transparent;
+}
+
+.purchase-expenses__delete-button.p-button-icon-only,
+.purchase-expenses__table-button.p-button-icon-only {
+    width: 22px;
+    height: 22px;
+    font-size: 18px;
+    border-radius: 50%;
+    color: var(--admss-app-medium-grey);
+    border: none;
+    background: transparent;
+}
+.purchase-expenses__table-button.p-button-icon-only:disabled {
+    color: var(--admss-app-light-grey);
+}
+
+.purchase-expenses__table-button--success.p-button-icon-only {
+    color: var(--admss-app-green);
+}
+
+.purchase-expenses__delete-button.p-button:enabled:focus,
+.purchase-expenses__delete-button.p-button.p-button-text:enabled:hover,
+.purchase-expenses__delete-button.p-button-icon-only:active,
+.p-button.p-button-text:enabled:active {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    color: var(--admss-app-red);
+}
+
+.purchase-expenses__delete-button .icon:hover {
+    color: var(--admss-app-red);
+}
+
+.expenses-confirm-dialog .p-confirm-dialog-reject,
+.expenses-confirm-dialog .p-confirm-dialog-accept {
+    padding: 20px 33px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.expenses-confirm-dialog {
+    width: 455px;
+    height: 451px;
+    color: var(--admss-app-primary);
+}
+
+.total-sum {
+    font-weight: 700;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.total-sum__label {
+    color: var(--admss-app-main-blue);
+}
+
+.purchase-expenses__table .expanded-row {
+    display: flex;
+    gap: 10px;
+    padding-left: 82px;
+}
+.purchase-expenses__table .expanded-row__label {
+    font-weight: 700;
+}
+
+.table-button-active .p-button-icon {
+    color: var(--admss-app-primary);
+    transform: rotate(180deg);
+}
+
+.purchase-expenses__dropdown {
+    height: 50px;
+}

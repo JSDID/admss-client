@@ -1,0 +1,37 @@
+.schedule .schedule-control {
+  display: flex;
+  gap: 15px;
+}
+
+.schedule-button.p-button.p-button-icon-only {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.schedule-button.p-button.p-button-icon-only.p-button-outlined:enabled:active {
+  color: var(--admss-app-white);
+  background: var(--admss-app-primary-main-green);
+  border-color: var(--admss-app-primary-main-green);
+}
+
+.schedule .p-datatable .p-datatable-tbody > tr {
+  height: 40px;
+}
+
+.schedule-confirm-dialog .p-confirm-dialog-reject,
+.schedule-confirm-dialog .p-confirm-dialog-accept {
+  padding: 20px 33px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.schedule-confirm-dialog {
+  width: 455px;
+  height: 451px;
+  color: var(--admss-app-primary);
+}

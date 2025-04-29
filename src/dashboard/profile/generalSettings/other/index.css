@@ -1,0 +1,95 @@
+.settings-other__header {
+    background: var(--admss-app-light-blue);
+    height: 60px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    .settings-other__header-row {
+        padding-left: 30px;
+    }
+}
+
+.settings-other__row {
+    border-bottom: 1px solid var(--admss-app-medium-blue);
+    width: 100%;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+    &:has(.row-edit__input) {
+        padding-left: 20px;
+    }
+
+    .row-edit__input {
+        flex: 0 1 78%;
+        max-width: 790px;
+    }
+    .row-edit__button.p-button {
+        height: 50px;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .description-text {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        padding-right: 40px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.settings-form .p-button {
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+.settings-form .row-edit__button.p-button {
+    height: 50px;
+    border-radius: 0 5px 5px 0;
+}
+
+.settings-form__button.p-button {
+    width: 245px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.settings-other__actions {
+    display: flex;
+    gap: 20px;
+    .settings-other__edit-button.p-button {
+        width: 60px;
+        font-size: 16px;
+        font-weight: 500;
+        &:enabled:hover {
+            color: var(--admss-app-white);
+            background: var(--admss-app-green);
+        }
+    }
+    .settings-other__delete-button.p-button {
+        width: 81px;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--admss-app-red);
+        &:enabled:hover {
+            color: var(--admss-app-white);
+            background: var(--admss-app-red);
+        }
+        &:disabled {
+            color: var(--admss-app-light-grey);
+        }
+    }
+}

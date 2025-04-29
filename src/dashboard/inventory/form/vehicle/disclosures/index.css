@@ -1,0 +1,12 @@
+.vehicle-disclosures__text-area {
+    height: 50px;
+    resize: none;
+    padding: 10px;
+    line-height: 1.5;
+    &:not(:focus) + .float-label {
+        padding-top: 8px;
+    }
+}
+.vehicle-disclosures__text-area.p-filled + .float-label {
+    padding-top: 0px;
+}

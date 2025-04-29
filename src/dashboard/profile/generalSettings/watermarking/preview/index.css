@@ -1,0 +1,43 @@
+.preview-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.preview-container {
+    position: relative;
+    background-color: var(--admss-app-white);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.preview-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.preview-close-button {
+    &.p-button.p-button-text {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: var(--admss-app-main-blue);
+        transition: none;
+        &:enabled:hover {
+            background-color: transparent;
+            box-shadow: none;
+            border: none;
+            color: var(--admss-app-dark-blue);
+        }
+    }
+}

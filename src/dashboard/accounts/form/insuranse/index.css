@@ -1,0 +1,105 @@
+.account-insurance__tabs .p-tabview-nav,
+.take-payment__tabs .p-tabview-nav {
+    flex-direction: row;
+    flex: 0 0;
+    width: auto;
+    border: none;
+    min-height: auto;
+    border-bottom: 2px solid var(--admss-app-light-grey);
+    font-weight: 700;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.account-insurance__tabs .p-tabview-panels,
+.take-payment__tabs .p-tabview-panels {
+    flex: 1;
+    padding-top: 0;
+}
+
+.account-insurance__tabs .p-tabview-nav-container a.p-tabview-nav-link,
+.take-payment__tabs .p-tabview-nav-container a.p-tabview-nav-link {
+    color: var(--admss-app-primary);
+    border: none;
+}
+
+.p-tabview .p-tabview-nav .p-tabview-selected .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none;
+}
+
+.account-insurance__tabs .p-tabview-nav-container a.p-tabview-nav-link[aria-selected="true"],
+.take-payment__tabs .p-tabview-nav-container a.p-tabview-nav-link[aria-selected="true"] {
+    color: var(--admss-app-primary);
+    border-radius: 0;
+    border-bottom: 2px solid var(--admss-app-primary);
+}
+
+.insurance-info__container {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 30px;
+    border: 1px solid var(--admss-app-light-grey);
+    display: flex;
+    flex-wrap: wrap;
+
+    :has(.loader) {
+        min-height: 15vh;
+        align-items: center;
+    }
+}
+
+.insurance-info__item {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.insurance-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insurance-field__label {
+    flex: 1;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.insurance-field__value,
+.insurance-field__input {
+    flex: 2;
+}
+
+.insurance-info__footer {
+    flex: 1 0 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.insurance-info__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    font-weight: 700;
+    width: 244px;
+}
+
+.insurance-info__button--edit {
+    width: 514px;
+    margin-top: 20px;
+}
+
+.insurance-info--splitter {
+    border-right: 1px solid var(--admss-app-light-grey);
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.insurance-field__label--thin {
+    font-weight: 400;
+}

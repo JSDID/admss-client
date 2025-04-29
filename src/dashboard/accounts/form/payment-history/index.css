@@ -1,0 +1,12 @@
+.account-history__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 210px;
+    font-weight: 700;
+}
+
+.account__dropdown.column-picker {
+    max-width: 245px;
+}

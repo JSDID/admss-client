@@ -1,0 +1,20 @@
+.vin-decoder {
+    display: flex;
+    width: 100%;
+}
+
+.vin-decoder__text-input {
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+}
+
+.vin-decoder__decode-button {
+    flex: 0 1 152px;
+    border-radius: 0 4px 4px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}

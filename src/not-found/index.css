@@ -1,0 +1,57 @@
+.not-found {
+ margin: 20vh auto 0;
+ width: 834px;
+ height: 580px;
+ border-radius: 15px;
+ .p-card-content {
+     font-family: "Open Sans", sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+}
+
+.not-found__warning,
+.not-found__info {
+ text-align: center;
+ text-transform: uppercase;
+ font-weight: 700;
+ margin: 0;
+}
+
+.not-found__warning {
+ font-size: 48px;
+}
+
+.not-found__info {
+ font-size: 32px;
+ padding-top: 20px;
+}
+
+.not-found__message {
+ font-size: 24px;
+ color: var(--admss-darkest-grey);
+}
+
+.not-found__image {
+ width: 284px;
+ height: 140px;
+ object-fit: cover;
+}
+
+.not-found__buttons {
+ margin-top: 30px;
+ display: flex;
+ gap: 25px;
+}
+
+.not-found__button.p-button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ text-transform: uppercase;
+ font-weight: 700;
+ font-size: 20px;
+ width: 210px;
+ height: 60px;
+}

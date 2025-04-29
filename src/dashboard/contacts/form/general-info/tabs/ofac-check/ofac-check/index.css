@@ -1,0 +1,52 @@
+.ofac-check__button {
+ width: 246px;
+ height: 54px;
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 23px;
+ text-transform: uppercase;
+}
+
+.ofac-check__divider {
+ font-family: monospace;
+ white-space: pre;
+ overflow: hidden;
+}
+
+.ofac-check__field {
+ margin-top: 20px;
+ height: 30vh;
+ overflow: scroll;
+ background-color: var(--admss-app-white-blue);
+}
+
+.ofac-check__container {
+ width: 90%;
+ margin: 0 auto;
+}
+
+.ofac-check__notice-section {
+ height: 100%;
+ font-size: 0.85rem;
+ font-weight: 400;
+ line-height: 22px;
+ font-size: 16px;
+ &:not(.ofac-check__notice-section--warning) {
+     color: var(--admss-app-darkest-blue);
+ }
+
+ &.ofac-check__notice-section--warning {
+     color: var(--admss-app-red);
+ }
+}
+
+.ofac-check__title {
+ text-transform: uppercase;
+ &:not(.ofac-check__title--warning) {
+     color: var(--admss-app-primary-main-green);
+ }
+
+ &.ofac-check__title--warning {
+     color: var(--admss-app-red);
+ }
+}

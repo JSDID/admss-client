@@ -1,0 +1,15 @@
+.account-settings__checkbox {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 1.25rem;
+}
+
+.account-settings__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+}

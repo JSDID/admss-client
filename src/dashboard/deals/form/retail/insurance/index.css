@@ -1,0 +1,36 @@
+.deal-insurance {
+    .deal-insurance__text-area {
+        width: 100%;
+        height: 110px;
+    }
+
+    .deal-insurance .p-inputnumber-input {
+        width: 100%;
+    }
+
+
+
+    .deal-insurance__currency-input.deal-insurance__currency-input--grey {
+        .p-inputtext {
+            color: var(--admss-app-medium-grey);
+        }
+    }
+
+    .deal-insurance__liability {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .deal-insurance__liability-item {
+        flex: 1;
+    }
+
+    .deal-insurance__divider-vertical {
+        height: 50px;
+        width: 1px;
+        background-color: var(--admss-app-light-grey);
+        border: none;
+    }
+
+}

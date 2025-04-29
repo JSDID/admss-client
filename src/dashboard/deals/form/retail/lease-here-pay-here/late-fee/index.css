@@ -1,0 +1,35 @@
+.late-fee__input,
+.late-fee__input .p-inputnumber-input {
+    height: 50px;
+    border-radius: 0;
+}
+
+.late-fee__input .p-inputnumber-input {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.late-fee__button.p-button {
+    flex: 0 0 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--admss-app-light-grey);
+    border-right: 0;
+}
+
+.late-fee__button.p-button.p-button-success:enabled:focus {
+    box-shadow: none;
+}
+
+.late-fee__button.p-button-secondary {
+    background-color: var(--admss-app-lightest-grey);
+    color: var(--admss-app-light-grey);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.late-fee__button-currency.p-button {
+    border-radius: 0;
+}

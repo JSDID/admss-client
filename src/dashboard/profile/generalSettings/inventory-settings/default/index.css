@@ -1,0 +1,11 @@
+.settings-inventory-default {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 515px;
+    height: 370px;
+
+    .bordered-checkbox {
+        height: 50px;
+    }
+}

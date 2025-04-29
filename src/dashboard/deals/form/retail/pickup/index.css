@@ -1,0 +1,59 @@
+.pickup-column {
+    padding: 0;
+}
+
+.pickup-header {
+    background: var(--admss-app-light-blue);
+    font-weight: 600;
+    display: flex;
+}
+
+.pickup-row {
+    display: flex;
+    border-bottom: 1px solid var(--admss-app-medium-blue);
+}
+
+.pickup-header__item,
+.pickup-row__item {
+    height: 60px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    flex: 0 0 30%;
+    border-right: 1px solid var(--admss-app-medium-blue);
+}
+
+.pickup-header__item:last-child,
+.pickup-row__item:last-child {
+    border-right: none;
+}
+
+.pickup-row:last-child {
+    border-bottom: none;
+}
+
+.pickup-amount {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.deal-retail-pickup {
+    .pickup-header {
+        height: 60px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .pickup-body {
+        padding-top: 0;
+    }
+
+    .pickup-input.pickup-input--grey {
+        .p-inputtext {
+            color: var(--admss-app-medium-grey);
+        }
+    }
+}
